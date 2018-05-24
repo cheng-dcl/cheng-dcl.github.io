@@ -30,7 +30,7 @@
         Version: 2.0.1 -->
 
   <meta charset="UTF-8">
-  <title>Index - ADong Space</title>
+  <title>haha - ADong Space</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/images/favicon.png">
@@ -45,7 +45,7 @@
 
   <meta name="author" content="dcl-Cheng">
   
-  <meta name="keywords" content="blog, hexo, mdui">
+  <meta name="keywords" content="blog, hexo, mdui,tag2">
 
   <!--iOS -->
   <meta name="apple-mobile-web-app-title" content="ADong Space">
@@ -60,10 +60,12 @@
   <!-- The Open Graph protocol -->
   <meta property="og:url" content="http://yoursite.com">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="Index - ADong Space | ADong Space">
+  <meta property="og:title" content="haha - ADong Space | ADong Space">
   <meta property="og:image" content="/images/favicon.png" />
   
 
+  
+    <meta property="og:article:tag" content="tag2">
   
 
   
@@ -218,10 +220,11 @@
     <div class="mdui-appbar mdui-appbar-fixed  mdui-shadow-1 theme-appbar  ">
   <div class="mdui-toolbar ">
     
-      <a href="javascript:;" class=" mdui-btn mdui-btn-icon mdui-ripple mdui-color-theme-accent theme-appbar__burger ">
-        <i class="mdui-icon material-icons">
-          <span></span>
+      <a href="/" class="  mdui-btn mdui-btn-icon mdui-ripple mdui-color-theme-accent theme-appbar__burger theme-appbar__burger--arrow">
+        <span>
+        <i class="mdui-icon material-icons ">
         </i>
+        </span>
       </a>
     
     <div class="mdui-toolbar-spacer"></div>
@@ -249,7 +252,7 @@
   <div class="theme-drawer__header__layer-1">
     <div class="mdui-toolbar theme-toolbar-top">
       
-        <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer"  id="drawer-back">
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer theme-appbar__burger--arrow" id="drawer-back">
           <i class="mdui-icon">
             <span></span>
           </i>
@@ -467,298 +470,379 @@
     <script src="/js/lightgallery.min.js"></script>
 
     <div id="barba-wrapper">
-      <div class="barba-container"  data-namespace="posts">
-        <div class="theme-index">
-  <div class="theme-posts">
-    
-    
+      <div class="barba-container"  data-namespace="post">
+        
+
+
+
+  <link rel="stylesheet" href="/css/prism/darcula.min.css">
+
+
+  <link rel="stylesheet" href="/css/prism/line-number.min.css">
+
+
+<div class="theme-post">
+  <div class="theme-post__background mdui-color-theme"></div>
+  <div class="theme-post__header mdui-color-theme">
+    <div class="theme-post__header__title mdui-text-truncate">
+      haha
+    </div>
+    <div class="theme-spacer"></div>
+    <div class="theme-post__header__actions mdui-valign">
+      <div>
+        <span>Posted: </span>
+        <span style="float: right">May 23, 2018</span>
+        
+        <br>
+          <span>Last Modified: </span>
+          <span>May 24, 2018</span>
+        
+      </div>
       
-
-
-  <div class="theme-posts__post">
-    <article class="mdui-card mdui-hoverable">
-      <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/1.png)">
-        <img src="/images/random/1.png" class="theme-posts__post__media__image" />
-        <div class="mdui-card-media-covered theme-posts__post__media-covered">
-          <div class="mdui-card-primary mdui-typo">
-            <a href="/2018/05/24/first/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-              
-              first
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="mdui-card-content">
-        
-      </section>
-      <div class="mdui-divider" style="margin: 0 16px;"></div>
-      <section class="theme-posts__post__footer">
-        
-          
-            
-              <a href="/categories/u3d/" class="theme-link--no-style">
-                <div class="mdui-chip theme-posts__post__footer__categories">
-                  <span class="mdui-chip-icon">
-                    <i class="mdui-icon material-icons mdui-text-center">&#xe86e;</i>
-                  </span>
-                  <span class="mdui-chip-title">u3d</span>
-                </div>
-              </a>
-            
-          
-        
-        
-          
-            
-              <a href="/tags/tag1/" class="theme-link--no-style">
-                <div class="mdui-chip theme-posts__post__footer__tags">
-                  <span class="mdui-chip-icon">
-                    <i class="mdui-icon fa fa-tags mdui-text-center"></i>
-                  </span>
-                  <span class="mdui-chip-title">tag1</span>
-                </div>
-              </a>
-            
-          
-        
-        <div class="theme-spacer"></div>
-        <div class="mdui-valign">
-          <div>
-            May 24, 2018
-          </div>
-        </div>
-      </section>
-    </article>
+  <div class="theme-post__qrcode">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-hidden-xs-down" mdui-menu="{target: '#qrcode-menu'}">
+      <i class="mdui-icon material-icons">&#xe337;</i>
+    </button>
+    <ul class="mdui-menu" id="qrcode-menu">
+      <li class="mdui-list-item" style="cursor: auto">
+        Article QR Code
+      </li>
+        <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACZklEQVR42u3aUa7CMAwEQO5/6fcOgChrO0krNP2qKiiZfMRh49ffT18vPDw8PDw8PDy8h/Fe8fX++U9P3t+fP5+MDQ8PD+8kL/mZT0+in4yn4NN9YWx4eHh4B3nXxSBf6PP75Ek+Njw8PLxn8vKh5LzrcoKHh4f3G7xkca9eSbHBw8PDexov+cN//fnrxb36zhuyFjw8PLyYVz0AO3l/w/keHh4e3iWv2dhULA+r3lxuusLDw8PbwOuFDnlwUG0gSDblo6wFDw8PbwMvCVgnw+ptoPOwAw8PD283r7r49loBeu1c1QnCw8PDO8mbBAFVTF5I8qnBw8PDu5eXxwr5IPL2rAXhBR4eHt4RXt48Wm2Wqm6gq3EwHh4e3nnevKF/XhiqgcX28z08PDy8mJcHu3kZqAKSgPhLOIKHh4d3hJc300+23fn2uvo2PDw8vHt5yQI9+e5ou9zrKcPDw8NbyqtGBpN2qEkZGDVd4eHh4W3j9ZoDquze5rsZRuDh4eFt4335QkzqxQ3V1oFCGIGHh4e3jbdqGz0/PEvaWJthBB4eHt4iXt4OlZSNauvV2vKDh4eHd4bX+4GEN9m4T0JhPDw8vN28ZBHPD/5XBcG97TUeHh7eGd6q5bsaQOTRxrK6h4eHh7eI94qvPLqdvK3aQICHh4d3Fy8pBqsW90nIG40BDw8P7yCvsPjGpSInzWMIPDw8vCfz8ud5BJxM6GhLjYeHh3cTLz8Aq07Bqu07Hh4e3kleHkZUmw9WTV+zMwIPDw9vA6/XaJWEDkkxyJsSotYuPDw8vM2837vw8PDw8PDw8PAecP0DZpEwEyNaX6AAAAAASUVORK5CYII=" style="cursor: auto">
+    </ul>
   </div>
 
 
-    
+      
+  <div class="theme-post__share">
+    <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#post-share-menu'}">
+      <i class="mdui-icon material-icons">&#xe80d;</i>
+    </button>
+
+    <ul class="mdui-menu" id="post-share-menu">
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2018/05/23/haha/index.html" target="_blank" class="mdui-ripple">
+                Share to Facebook
+            </a>
+        </li>
       
 
-
-  <div class="theme-posts__post">
-    <article class="mdui-card mdui-hoverable">
-      <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/19.png)">
-        <img src="/images/random/19.png" class="theme-posts__post__media__image" />
-        <div class="mdui-card-media-covered theme-posts__post__media-covered">
-          <div class="mdui-card-primary mdui-typo">
-            <a href="/2018/05/23/haha/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
-              
-              haha
+      
+        <li class="mdui-menu-item">
+            <a href="https://plus.google.com/share?url=http://yoursite.com//2018/05/23/haha/index.html" target="_blank" class="mdui-ripple">
+                Share to Google+
             </a>
-          </div>
-        </div>
-      </section>
-      <section class="mdui-card-content">
-        
-      </section>
-      <div class="mdui-divider" style="margin: 0 16px;"></div>
-      <section class="theme-posts__post__footer">
-        
-          
-            
-              <a href="/categories/u3d/" class="theme-link--no-style">
-                <div class="mdui-chip theme-posts__post__footer__categories">
-                  <span class="mdui-chip-icon">
-                    <i class="mdui-icon material-icons mdui-text-center">&#xe86e;</i>
-                  </span>
-                  <span class="mdui-chip-title">u3d</span>
-                </div>
-              </a>
-            
-          
-        
-        
-          
-            
-              <a href="/tags/tag2/" class="theme-link--no-style">
-                <div class="mdui-chip theme-posts__post__footer__tags">
-                  <span class="mdui-chip-icon">
-                    <i class="mdui-icon fa fa-tags mdui-text-center"></i>
-                  </span>
-                  <span class="mdui-chip-title">tag2</span>
-                </div>
-              </a>
-            
-          
-        
-        <div class="theme-spacer"></div>
-        <div class="mdui-valign">
-          <div>
-            May 23, 2018
-          </div>
-        </div>
-      </section>
-    </article>
+        </li>
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com//2018/05/23/haha/index.html&title=haha" target="_blank" class="mdui-ripple">
+                Share to Linkedin
+            </a>
+        </li>
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=ADong Space&title=haha&summary=&pics=http://yoursite.com/images/favicon.png&url=http://yoursite.com/2018/05/23/haha/index.html" target="_blank" class="mdui-ripple">
+                Share to QQ
+            </a>
+        </li>
+      
+
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="https://twitter.com/intent/tweet?text=haha&url=http://yoursite.com//2018/05/23/haha/index.html&via=dcl-Cheng" target="_blank" class="mdui-ripple">
+                Share to Twitter
+            </a>
+        </li>
+      
+
+      
+        <li class="mdui-menu-item">
+            <a href="http://service.weibo.com/share.php?appkey=&title=haha&url=http://yoursite.com//2018/05/23/haha/index.html&pic=&searchPic=false&style=simple" target="_blank" class="mdui-ripple">
+                Share to Weibo
+            </a>
+        </li>
+      
+
+    </ul>
   </div>
 
 
+    </div>
+  </div>
+  <div class="theme-post__warpper
     
-      
+      theme-post__warpper--center
+    
+  ">
+    <div class="theme-post__warpper__container">
+      <article class="mdui-card theme-post__card mdui-hoverable">
+        <section class="theme-post__card__warning">
+          This article was last modified
+          <span id="content-warning"></span>
+          days ago.
+          The content of this post may be outdated!
+        </section>
+        
+        
+          <section class="mdui-card-media">
+            <img src="/images/random/20.png"/>
+          </section>
+        
+        <section class="mdui-typo theme-post__card__content">
+          
+        </section>
 
-
-  <div class="theme-posts__post">
-    <article class="mdui-card mdui-hoverable">
-      <section class="mdui-card-media theme-posts__post__media" style="background-image: url(/images/random/14.png)">
-        <img src="/images/random/14.png" class="theme-posts__post__media__image" />
-        <div class="mdui-card-media-covered theme-posts__post__media-covered">
-          <div class="mdui-card-primary mdui-typo">
-            <a href="/2018/05/23/hello-world/" target="_self" class="mdui-card-primary-title mdui-text-truncate">
+        
+          <section class="theme-post__card__license mdui-typo">
+            <span>
+              Article License: 
               
-              Hello World
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="mdui-card-content">
-        Welcome to Hexo
-      </section>
-      <div class="mdui-divider" style="margin: 0 16px;"></div>
-      <section class="theme-posts__post__footer">
-        
-          
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>
+              
+            </span>
+            <br />
+            <span>Article Permalink: <a href="http://yoursite.com/2018/05/23/haha/">http://yoursite.com/2018/05/23/haha/</a></span>
             
-              <a href="/categories/markdown/" class="theme-link--no-style">
-                <div class="mdui-chip theme-posts__post__footer__categories">
-                  <span class="mdui-chip-icon">
-                    <i class="mdui-icon material-icons mdui-text-center">&#xe86e;</i>
-                  </span>
-                  <span class="mdui-chip-title">markdown</span>
-                </div>
-              </a>
+              <br />
+              <span>Article Markdown: <a href="http://yoursite.com/2018/05/23/haha/haha.md">http://yoursite.com/2018/05/23/haha/haha.md</a></span>
             
-          
+          </section>
         
+
         
-          
-            <div class="theme-posts__post__footer__tags mdui-valign">
-              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple" mdui-menu="{target: '#post-tags-2'}">
-                <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
+          <section class="mdui-card-actions theme-post__card__actions">
+            
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple  mdui-color-red" mdui-tooltip="{content: 'Buy me a beer?', position: 'right'}" mdui-dialog="{target: '#donateDialog'}">
+                <i class="mdui-icon fa fa-beer"></i>
               </button>
-              <ul class="mdui-menu" id="post-tags-2">
+            
+            <div class="theme-spacer"></div>
+            
+              <div class="mdui-chip theme-post__card__chip--bg theme-post__card__chip--margin">
+                <span class="mdui-chip-icon theme-post__card__chip--bg"><i class="mdui-icon mdui-text-color-black-icon material-icons">&#xe149;</i></span>
+              </div>
+              <div class="mdui-typo">
                 
-                  <li class="mdui-menu-item">
-                    <a href="/tags/tag1/" class="mdui-ripple">
-                      <span>tag1</span>
-                    </a>
-                  </li>
+                  <a href="/categories/u3d/">
+                    <span>u3d</span>
+                  </a>
                 
-                  <li class="mdui-menu-item">
-                    <a href="/tags/tag2/" class="mdui-ripple">
-                      <span>tag2</span>
-                    </a>
-                  </li>
+              </div>
+            
+            
+              <div class="mdui-chip theme-post__card__chip--bg theme-post__card__chip--margin">
+                <span class="mdui-chip-icon theme-post__card__chip--bg"><i class="mdui-icon mdui-text-color-black-icon fa fa-tags"></i></span>
+              </div>
+              <div class="mdui-typo">
                 
-              </ul>
-            </div>
+                  <a href="/tags/tag2/">
+                    <span>tag2</span>
+                  </a>
+                
+              </div>
+            
+          </section>
+        
+
+        
+          
+            <script type="text/javascript">
+              themeRuntime.commentRest.function = function (newIdentifier, newUrl, newTitle) {
+                return
+              }
+            </script>
           
         
-        <div class="theme-spacer"></div>
-        <div class="mdui-valign">
-          <div>
-            May 23, 2018
-          </div>
-        </div>
-      </section>
-    </article>
+      </article>
+      
+    </div>
   </div>
 
+  <div class="theme-spacer"></div>
 
+  
+
+  
+    <div class="theme-post__pagination mdui-color-theme">
+  
+    <div class="theme-post__pagination__prev mdui-ripple mdui-valign">
+      <a href="/2018/05/24/first/" class="theme-post__pagination__prev__content mdui-text-left">
+        <div>
+          <i class="mdui-icon material-icons mdui-text-center">&#xe5cb;</i>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">Newer Post</span>
+        </div>
+        <div class="mdui-typo-title mdui-text-truncate">
+          first
+        </div>
+      </a>
+    </div>
+  
+
+  
+    <div class="theme-post__pagination__next mdui-ripple mdui-valign">
+      <a href="/2018/05/23/hello-world/" class="theme-post__pagination__next__content mdui-text-right">
+        <div>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">Older Post</span>
+          <i class="mdui-icon material-icons mdui-text-center">&#xe5cc;</i>
+        </div>
+        <div class="mdui-typo-title mdui-text-truncate">
+          Hello World
+        </div>
+      </a>
+    </div>
     
-    
-      <div class="theme-end-footer">
-        <div class="mdui-text-center mdui-text-color-theme-text">
-          It looks like you&#39;ve reached the end.
+</div>
+
+  
+
+  
+    <div class="mdui-dialog" id="donateDialog">
+      <div class="mdui-dialog-title">Buy me a beer?</div>
+      <div class="mdui-dialog-content">
+        <div class="mdui-list">
+          
+            <a href="/img/avatar.png" title="wechat" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-wechat mdui-text-center"></i>&emsp;
+              
+              
+              
+              wechat
+            </a>
+          
+            <a href="https://paypal.com" title="paypay" class="mdui-list-item mdui-ripple" target="_blank">
+              
+                <i class="mdui-list-item-icon mdui-icon fa fa-paypal mdui-text-center"></i>&emsp;
+              
+              
+              
+              paypay
+            </a>
+          
         </div>
       </div>
-    
-  </div>
-  <button id="index-fab" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent mdui-fab-hide" onclick="smoothScroll.animateScroll( 0 );">
-  <i class="mdui-icon material-icons">&#xe5d8;</i>
-</button>
-
+      <div class="mdui-dialog-actions">
+        <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close>Cancel</button>
+      </div>
+    </div>
+  
 </div>
 <script type="text/javascript">
-  themeRuntime.scriptsMap.posts = [];
-  (function() {
-    var fabTopFlag = false;
-    var fabEl = document.getElementById('index-fab');
-    function fabShowHide() {
-      var bodyScrolled = document.documentElement.scrollTop || document.body.scrollTop;
-      if (bodyScrolled > 0 && !fabTopFlag) {
-        fabEl.classList.remove('mdui-fab-hide');
-        fabTopFlag = true;
-      } else if (bodyScrolled === 0 && fabTopFlag) {
-        fabEl.classList.add('mdui-fab-hide');
-        fabTopFlag = false;
+  themeRuntime.scriptsMap.post = [];
+  if (document.querySelector('.theme-post__toc-fab__menu > ol') !== null && document.querySelector('.theme-post__toc > ol') !== null) {
+    tocHighlight()
+    function tocHighlight() {
+      var timer;
+      function doWork() {
+        listens.forEach(function(value, index) {
+          value[1]();
+          value[0].classList.remove("mdui-list-item-active");
+        })
+        let actionToc = (listens[listens.reduce(function(r, v, index) {
+          if (v[2] == true) {
+            return index;
+          } else return r;
+        }, undefined)] || [])[0] || listens[0][0];
+        actionToc.classList.add("mdui-list-item-active");
+        if(actionToc.getClientRects().length == 0)return;
+        showToc(actionToc);
       }
+      function showToc(toc) {
+        let offsetTop = toc.getClientRects()[0].top - cardToc.getClientRects()[0].top - 40;
+        let offsetBottom = toc.getClientRects()[0].bottom - cardToc.getClientRects()[0].bottom + 40;
+        let offset = 0;
+        if (offsetTop < 0) offset = offsetTop;
+        if (offsetBottom > 0) offset = offsetBottom;
+        var targetTop = Math.max(0, Math.min(cardToc.scrollTop + offset, toclist.offsetHeight - cardToc.offsetHeight));
+        clearInterval(timer);
+        timer = setInterval(function() {
+          var now = cardToc.scrollTop;
+          var speed = (targetTop - now) / 10;
+          speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+          if (Math.abs(now - targetTop) < 1) {
+            clearInterval(timer);
+          }
+          cardToc.scrollTop = now + speed;
+        }, 30);
+      }
+      var listens = [];
+      var cardToc = document.querySelector('.theme-post__toc');
+      var links = cardToc.querySelectorAll(".theme-post__toc__content__link");
+      var toclist = document.querySelector(".theme-post__toc > ol");
+      Array.prototype.forEach.call(links, function(value, index) {
+        var id = (value.getAttribute("href") || "#").slice(1);
+        var element = document.getElementById(id);
+        listens.push([value, function() {
+          var readed = false;
+          var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+          if (element.offsetTop <= scrollTop + element.clientHeight + 64) {
+            readed = true;
+          } else {
+            readed = false;
+          }
+          listens[index][2] = readed;
+        }, false])
+      })
+      doWork();
+      window.addEventListener("scroll", doWork)
+      var listener = {
+        function:  doWork,
+        event: 'scroll',
+        el: window,
+        removed: false
+      }
+      themeRuntime.scriptsMap.post.push(listener)
     }
-    fabShowHide()
-    window.addEventListener('scroll', fabShowHide);
-    var listener = {
-      function: fabShowHide,
-      event: 'scroll',
-      el: window,
-      removed: false
-    }
-    themeRuntime.scriptsMap.posts.push(listener)
-  })();
+  }
+</script>
 
+<script type="text/javascript">
   (function() {
-    var pageTotal = 1
-    var pageNext = 2
-    themeRuntime.temp = {
-      index: 1
+    var postLastModifiedDate = 1527158171411
+    var today = (new Date()).getTime()
+    var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
+    if (difference >= 100) {
+      document.querySelector('.theme-post__card__warning').style.display = 'block'
+      document.querySelector('#content-warning').textContent = difference
     }
-    function morePosts() {
-      var screenHeight = window.innerHeight;
-      var compareHeight = document.body.clientHeight -  (document.documentElement.scrollTop || document.body.scrollTop);
-      var loadStatus = pageNext - themeRuntime.temp.index
-      if (screenHeight >= compareHeight && loadStatus === 1) {
-        if (pageNext <= pageTotal) {
-          loadProgressInline(false)
-          var url = window.location.href + "page/" + pageNext
-          themeRuntime.temp.index = pageNext;
-          //console.log(pageTotal, url)
-          fetch(url, {
-              method:'GET',
-              mode:'cors',
-              credentials: 'include'
-          })
-          .then(function(response) {
-            return response.text()
-          }).then(function(HTML) {
-            var fakeDom = document.createElement('html');
-            fakeDom.innerHTML = HTML
-            var morePostsHTML = fakeDom.querySelector('.theme-posts').innerHTML
-            var postsArea = document.querySelector(".theme-posts")
-            loadProgressInline(true)
-            postsArea.insertAdjacentHTML('beforeend', morePostsHTML)
-            pageNext++;
-          }).catch(function(error) {
-            mdui.alert(error, "ERROR!");
-          })
-        }
-      }
-    }
-    function loadProgressInline(state) {
-      var progressEl = document.getElementById('progressBar')
-      if (state === true) {
-        progressEl.classList.add('theme-appbar__progress--hidden')
-      } else if (state === false) {
-        progressEl.classList.remove('theme-appbar__progress--hidden')
-      }
-    }
-    window.addEventListener('scroll', morePosts);
-    var listener = {
-      function: morePosts,
-      event: 'scroll',
-      el: window,
-      removed: false
-    }
-    themeRuntime.scriptsMap.posts.push(listener)
   })();
 </script>
+
+<script type="text/javascript">
+  var images = document.querySelectorAll('.theme-post__card__content img')
+  for (i = 0; i < images.length; i++) {
+    //console.log('image added', i)
+    images[i].addEventListener("click", openLG);
+    var listener = {
+      function:  openLG,
+      event: 'click',
+      el: images[i],
+      removed: false
+    }
+    themeRuntime.scriptsMap.post.push(listener)
+  }
+  function openLG() {
+    var img_src = this.getAttribute('src');
+    var img_alt = this.getAttribute('alt');
+    lightGallery(this, {
+      dynamic: true,
+      counter: false,
+      dynamicEl: [{
+        "src": img_src,
+        'subHtml': "<span author>dcl-Cheng</span><div descr>" + img_alt + "</div>"
+      }],
+    });
+  }
+</script>
+
+
 
 
       </div>
