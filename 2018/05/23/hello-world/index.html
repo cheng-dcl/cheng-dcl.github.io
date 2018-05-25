@@ -103,7 +103,7 @@
       opacity: 0;
       -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
       transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
-      display: none;
+      display: flex;
     }
   </style>
   <div id="spinner">
@@ -251,20 +251,6 @@
     <div class="mdui-drawer mdui-drawer-full-height theme-drawer mdui-shadow-2" id="drawer">
   <!-- header -->
   <div class="theme-drawer__header">
-  <div class="theme-drawer__header__layer-1">
-    <div class="mdui-toolbar theme-toolbar-top">
-      
-        <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer theme-appbar__burger--arrow" id="drawer-back">
-          <i class="mdui-icon">
-            <span></span>
-          </i>
-        </a>
-      
-    </div>
-    <div class="mdui-toolbar theme-toolbar-bottom">
-      <span class="theme-toolbar-bottom__title">ADong Space</span>
-    </div>
-  </div>
 
   <div class="theme-drawer__header__layer-2" >
     <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/favicon.icon"/>
@@ -277,6 +263,32 @@
       </div>
     </div>
   </div>
+  <div class="theme-drawer__header__layer-1">
+    <!--
+    <div class="mdui-toolbar theme-toolbar-top">
+        
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer theme-appbar__burger--arrow" id="drawer-back">
+        <i class="mdui-icon">
+          <span></span>
+        </i>
+      </a>
+        
+    </div>
+
+    <div class="mdui-toolbar theme-toolbar-bottom">
+      <span class="theme-toolbar-bottom__title">ADong Space</span>
+    </div>
+    -->
+    <div class=" ">
+        
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger  " id="drawer-back">
+        <i class="mdui-icon">
+          <span></span>
+        </i>
+      </a>
+        
+    </div>
+  </div>
 </div>
 
   <div class="theme-drawer__warpper">
@@ -285,18 +297,18 @@
   <ul class="mdui-list">
     <a href="/" class="mdui-list-item mdui-ripple mdui-ripple-white">
       <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-pink ">&#xe88a;</i>
-      <div class="mdui-list-item-content">首页</div>
+      <div class="mdui-list-item-content">Index</div>
     </a>
     <a href="/archives/" class="mdui-list-item mdui-ripple mdui-ripple-white">
       <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">&#xe149;</i>
-      <div class="mdui-list-item-content">归档</div>
+      <div class="mdui-list-item-content">Archives</div>
     </a>
     <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}" mdui-collapse>
       
         <div class="mdui-collapse-item ">
           <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
             <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-orange">&#xe86e;</i>
-            <div class="mdui-list-item-content">分类</div>
+            <div class="mdui-list-item-content">Categories</div>
             <i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-text-color-pink">&#xe5c5;</i>
           </div>
           <div class="mdui-collapse-item-body mdui-list">
@@ -320,7 +332,7 @@
         <div class="mdui-collapse-item ">
           <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
             <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center mdui-text-color-cyan" ></i>
-            <div class="mdui-list-item-content">标签</div>
+            <div class="mdui-list-item-content">Tags</div>
             <i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-text-color-pink">&#xe5c5;</i>
           </div>
           <div class="mdui-collapse-item-body mdui-list">
@@ -343,7 +355,7 @@
       <div class="mdui-collapse-item ">
         <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
           <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">&#xe916;</i>
-          <div class="mdui-list-item-content">年份</div>
+          <div class="mdui-list-item-content">Years</div>
           <i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-text-color-pink">&#xe5c5;</i>
         </div>
         <div class="mdui-collapse-item-body mdui-list">
@@ -450,7 +462,7 @@
     
       <br />
       <span>
-        最后更新于: May 25, 2018
+        Last Updated: May 25, 2018
       </span>
     
     
@@ -467,10 +479,9 @@
   </div>
 </div>
 
-    <div id="top"></div>
+    <!--<div id="top"></div>-->
 
     <script src="/js/lightgallery.min.js"></script>
-
     <div id="barba-wrapper">
       <div class="barba-container"  data-namespace="post">
         
@@ -492,11 +503,11 @@
     <div class="theme-spacer"></div>
     <div class="theme-post__header__actions mdui-valign">
       <div>
-        <span>编写时间：</span>
+        <span>Posted: </span>
         <span style="float: right">May 23, 2018</span>
         
         <br>
-          <span>最后修改时间：</span>
+          <span>Last Modified: </span>
           <span>May 24, 2018</span>
         
       </div>
@@ -507,7 +518,7 @@
     </button>
     <ul class="mdui-menu" id="qrcode-menu">
       <li class="mdui-list-item" style="cursor: auto">
-        文章二维码
+        Article QR Code
       </li>
         <img class="mdui-img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACV0lEQVR42u3aQZLCMAwEQP7/afYDmzCSYyVQ7RNFpYLbB1uM/Hr/9Hjh4eHh4eHh4eE9jPeKxz8vip/Pn1mfGx4eHt4M78NWGzxzNK3zNyTLV50bHh4e3iTvaMPNJ5pPJdnoq3PDw8PD+xZeAj7HJ7+Fh4eH9+28KjI5AB50MODh4eFdGkbkwURvmW7OWvDw8PBiXt5kmv882t/Dw8PDC3jVkZS5eRusd+R8mCEeHh7eZl61KbXyZPJNbz54eHh4d/HyH0uoSUiRHBsJGA8PD2+el7+iekj0Lhb0Ln7h4eHhzfDyhlO1qd9jVBe9EOPi4eHhXcqrRg/ny7GC7EUVeHh4ePfyqiFCssWvF+uFmeDh4eGN8HqxQtLW6oW5SRhxeCzh4eHhbeblgelKsFttmOXLioeHhzfPq/7h7wWsO8KIw7fh4eHhbeZVC+jeVYBenJF/g4eHhzfPe5+OHrW3HL0iHg8PD2+Sd9Xkriqg83AZDw8P7y5e9RJVr0m2DlgKI/Dw8PA28BLYSgjbK9Avzlrw8PDwRnLOlfK6cE1qucGGh4eHdxcvxyQBxPmRkJTazRAZDw8Pb5xXDQiq0W0eRjTjCTw8PLzNvOooRwOtSfcKdzw8PLwZXm9TzheicFkqvoJQvjqAh4eHt4HXOwx6zbOVqPfilBoPDw9vW4dopR0VFcELl7rw8PDwvoWXU/PpVoPgZkqNh4eHdxOvtxB5yd6LM/Dw8PDmedVrT/mGXm5ixe/Bw8PDu4vXK3xX4ob8DdXDBg8PD2837/cGHh4eHh4eHh7eA8YfXMYf61Plh7MAAAAASUVORK5CYII=" style="cursor: auto">
     </ul>
@@ -525,7 +536,7 @@
       
         <li class="mdui-menu-item">
             <a href="https://www.facebook.com/sharer/sharer.php?u=https://dcl-cheng.github.io//2018/05/23/hello-world/index.html" target="_blank" class="mdui-ripple">
-                分享到Facebook
+                Share to Facebook
             </a>
         </li>
       
@@ -533,7 +544,7 @@
       
         <li class="mdui-menu-item">
             <a href="https://plus.google.com/share?url=https://dcl-cheng.github.io//2018/05/23/hello-world/index.html" target="_blank" class="mdui-ripple">
-                分享到Google+
+                Share to Google+
             </a>
         </li>
       
@@ -541,7 +552,7 @@
       
         <li class="mdui-menu-item">
             <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://dcl-cheng.github.io//2018/05/23/hello-world/index.html&title=Hello World" target="_blank" class="mdui-ripple">
-                分享到Linkedin
+                Share to Linkedin
             </a>
         </li>
       
@@ -549,7 +560,7 @@
       
         <li class="mdui-menu-item">
             <a href="http://connect.qq.com/widget/shareqq/index.html?site=ADong Space&title=Hello World&summary=&pics=https://dcl-cheng.github.io/images/favicon.icon&url=https://dcl-cheng.github.io/2018/05/23/hello-world/index.html" target="_blank" class="mdui-ripple">
-                分享到QQ
+                Share to QQ
             </a>
         </li>
       
@@ -559,7 +570,7 @@
       
         <li class="mdui-menu-item">
             <a href="https://twitter.com/intent/tweet?text=Hello World&url=https://dcl-cheng.github.io//2018/05/23/hello-world/index.html&via=dcl-Cheng" target="_blank" class="mdui-ripple">
-                分享到Twitter
+                Share to Twitter
             </a>
         </li>
       
@@ -567,7 +578,7 @@
       
         <li class="mdui-menu-item">
             <a href="http://service.weibo.com/share.php?appkey=&title=Hello World&url=https://dcl-cheng.github.io//2018/05/23/hello-world/index.html&pic=&searchPic=false&style=simple" target="_blank" class="mdui-ripple">
-                分享到微博
+                Share to Weibo
             </a>
         </li>
       
@@ -584,15 +595,15 @@
     <div class="theme-post__warpper__container">
       <article class="mdui-card theme-post__card mdui-hoverable">
         <section class="theme-post__card__warning">
-          这篇文章最后修改于
+          This article was last modified
           <span id="content-warning"></span>
-          天之前。
-          本页内容可能已经过时！
+          days ago.
+          The content of this post may be outdated!
         </section>
         
         
           <section class="mdui-card-media">
-            <img src="/images/random/10.png"/>
+            <img src="/images/random/28.png"/>
           </section>
         
         <section class="mdui-typo theme-post__card__content">
@@ -615,16 +626,16 @@
         
           <section class="theme-post__card__license mdui-typo">
             <span>
-              本文许可协议：
+              Article License: 
               
                 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>
               
             </span>
             <br />
-            <span>本文永久链接：<a href="https://dcl-cheng.github.io/2018/05/23/hello-world/">https://dcl-cheng.github.io/2018/05/23/hello-world/</a></span>
+            <span>Article Permalink: <a href="https://dcl-cheng.github.io/2018/05/23/hello-world/">https://dcl-cheng.github.io/2018/05/23/hello-world/</a></span>
             
               <br />
-              <span>本文Markdown：<a href="https://dcl-cheng.github.io/2018/05/23/hello-world/hello-world.md">https://dcl-cheng.github.io/2018/05/23/hello-world/hello-world.md</a></span>
+              <span>Article Markdown: <a href="https://dcl-cheng.github.io/2018/05/23/hello-world/hello-world.md">https://dcl-cheng.github.io/2018/05/23/hello-world/hello-world.md</a></span>
             
           </section>
         
@@ -632,7 +643,7 @@
         
           <section class="mdui-card-actions theme-post__card__actions">
             
-              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple  mdui-color-red" mdui-tooltip="{content: '打赏', position: 'right'}" mdui-dialog="{target: '#donateDialog'}">
+              <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple  mdui-color-red" mdui-tooltip="{content: 'Buy me a beer?', position: 'right'}" mdui-dialog="{target: '#donateDialog'}">
                 <i class="mdui-icon fa fa-beer"></i>
               </button>
             
@@ -707,7 +718,7 @@
       <a href="/2018/05/23/haha/" class="theme-post__pagination__prev__content mdui-text-left">
         <div>
           <i class="mdui-icon material-icons mdui-text-center">&#xe5cb;</i>
-          <span class="mdui-typo-body-2-opacity mdui-text-center">新的文章</span>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">Newer Post</span>
         </div>
         <div class="mdui-typo-title mdui-text-truncate">
           haha
@@ -725,7 +736,7 @@
 
   
     <div class="mdui-dialog" id="donateDialog">
-      <div class="mdui-dialog-title">打赏</div>
+      <div class="mdui-dialog-title">Buy me a beer?</div>
       <div class="mdui-dialog-content">
         <div class="mdui-list">
           
@@ -750,7 +761,7 @@
         </div>
       </div>
       <div class="mdui-dialog-actions">
-        <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close>不要</button>
+        <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close>Cancel</button>
       </div>
     </div>
   
@@ -871,9 +882,9 @@
   </main>
 
   <div id="outdated" style="z-index: 9999;">
-    <h6>你的浏览器已经过气辣！</h6>
-    <p>赶紧升级浏览器来访问本站吧！<a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">现在就去</a></p>
-    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="关闭">&times;</a></p>
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
   </div>
   <!-- import js -->
 

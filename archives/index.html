@@ -30,7 +30,7 @@
         Version: 2.0.1 -->
 
   <meta charset="UTF-8">
-  <title>归档 - ADong Space</title>
+  <title>Archives - ADong Space</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/images/favicon.icon">
@@ -60,7 +60,7 @@
   <!-- The Open Graph protocol -->
   <meta property="og:url" content="https://dcl-cheng.github.io">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="归档 - ADong Space | ADong Space">
+  <meta property="og:title" content="Archives - ADong Space | ADong Space">
   <meta property="og:image" content="/images/favicon.icon" />
   
 
@@ -99,7 +99,7 @@
       opacity: 0;
       -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
       transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1);
-      display: none;
+      display: flex;
     }
   </style>
   <div id="spinner">
@@ -247,20 +247,6 @@
     <div class="mdui-drawer mdui-drawer-full-height theme-drawer mdui-shadow-2" id="drawer">
   <!-- header -->
   <div class="theme-drawer__header">
-  <div class="theme-drawer__header__layer-1">
-    <div class="mdui-toolbar theme-toolbar-top">
-      
-        <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer theme-appbar__burger--arrow" id="drawer-back">
-          <i class="mdui-icon">
-            <span></span>
-          </i>
-        </a>
-      
-    </div>
-    <div class="mdui-toolbar theme-toolbar-bottom">
-      <span class="theme-toolbar-bottom__title">ADong Space</span>
-    </div>
-  </div>
 
   <div class="theme-drawer__header__layer-2" >
     <img class="mdui-img-circle theme-drawer__header__layer-2__user__avatar" src="/images/favicon.icon"/>
@@ -273,6 +259,32 @@
       </div>
     </div>
   </div>
+  <div class="theme-drawer__header__layer-1">
+    <!--
+    <div class="mdui-toolbar theme-toolbar-top">
+        
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger theme-appbar__burger--drawer theme-appbar__burger--arrow" id="drawer-back">
+        <i class="mdui-icon">
+          <span></span>
+        </i>
+      </a>
+        
+    </div>
+
+    <div class="mdui-toolbar theme-toolbar-bottom">
+      <span class="theme-toolbar-bottom__title">ADong Space</span>
+    </div>
+    -->
+    <div class=" ">
+        
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple theme-appbar__burger  " id="drawer-back">
+        <i class="mdui-icon">
+          <span></span>
+        </i>
+      </a>
+        
+    </div>
+  </div>
 </div>
 
   <div class="theme-drawer__warpper">
@@ -281,18 +293,18 @@
   <ul class="mdui-list">
     <a href="/" class="mdui-list-item mdui-ripple mdui-ripple-white">
       <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-pink ">&#xe88a;</i>
-      <div class="mdui-list-item-content">首页</div>
+      <div class="mdui-list-item-content">Index</div>
     </a>
     <a href="/archives/" class="mdui-list-item mdui-ripple mdui-ripple-white">
       <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">&#xe149;</i>
-      <div class="mdui-list-item-content">归档</div>
+      <div class="mdui-list-item-content">Archives</div>
     </a>
     <ul class="mdui-list mdui-collapse" mdui-collapse="{accordion: true}" mdui-collapse>
       
         <div class="mdui-collapse-item ">
           <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
             <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-orange">&#xe86e;</i>
-            <div class="mdui-list-item-content">分类</div>
+            <div class="mdui-list-item-content">Categories</div>
             <i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-text-color-pink">&#xe5c5;</i>
           </div>
           <div class="mdui-collapse-item-body mdui-list">
@@ -316,7 +328,7 @@
         <div class="mdui-collapse-item ">
           <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
             <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center mdui-text-color-cyan" ></i>
-            <div class="mdui-list-item-content">标签</div>
+            <div class="mdui-list-item-content">Tags</div>
             <i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-text-color-pink">&#xe5c5;</i>
           </div>
           <div class="mdui-collapse-item-body mdui-list">
@@ -339,7 +351,7 @@
       <div class="mdui-collapse-item ">
         <div class="mdui-collapse-item-header mdui-list-item mdui-ripple mdui-ripple-white">
           <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">&#xe916;</i>
-          <div class="mdui-list-item-content">年份</div>
+          <div class="mdui-list-item-content">Years</div>
           <i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-text-color-pink">&#xe5c5;</i>
         </div>
         <div class="mdui-collapse-item-body mdui-list">
@@ -446,7 +458,7 @@
     
       <br />
       <span>
-        最后更新于: May 25, 2018
+        Last Updated: May 25, 2018
       </span>
     
     
@@ -463,10 +475,9 @@
   </div>
 </div>
 
-    <div id="top"></div>
+    <!--<div id="top"></div>-->
 
     <script src="/js/lightgallery.min.js"></script>
-
     <div id="barba-wrapper">
       <div class="barba-container"  data-namespace="archive">
         
@@ -489,27 +500,27 @@
         </div>
         <div class="theme-spacer mdui-hidden-sm-down"></div>
         
-          <button class="theme-archive__header__button mdui-btn mdui-color-theme-accent mdui-ripple mdui-btn-raised" mdui-dialog="{target: '#contactDialog'}">联系我</button>
+          <button class="theme-archive__header__button mdui-btn mdui-color-theme-accent mdui-ripple mdui-btn-raised" mdui-dialog="{target: '#contactDialog'}">Contact me</button>
         
       </div>
     </div>
     <div class="theme-archive__items mdui-container-fluid">
       <div class="theme-archive__items__title mdui-text-color-theme-secondary">
-        分类
+        Categories
       </div>
       <div class="mdui-row">
         
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/categories/u3d/" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-grey">
-                <div class="mdui-card-media" style="background-image: url(/images/random/29.png)"></div>
+              <div class="mdui-card mdui-color-lime">
+                <div class="mdui-card-media" style="background-image: url(/images/random/17.png)"></div>
                 <div class="theme-archive__items__content">
                   <img class="mdui-img-circle theme-archive__items__avatar" src="/images/favicon.icon" />
                   <div class="theme-archive__items__text-title">u3d</div>
                   <div class="theme-archive__items__length">
                     
-                      2 篇文章
+                      2 Post
                     
                   </div>
                 </div>
@@ -520,14 +531,14 @@
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/categories/markdown/" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-green">
-                <div class="mdui-card-media" style="background-image: url(/images/random/26.png)"></div>
+              <div class="mdui-card mdui-color-teal">
+                <div class="mdui-card-media" style="background-image: url(/images/random/41.png)"></div>
                 <div class="theme-archive__items__content">
                   <img class="mdui-img-circle theme-archive__items__avatar" src="/images/favicon.icon" />
                   <div class="theme-archive__items__text-title">markdown</div>
                   <div class="theme-archive__items__length">
                     
-                      1 篇文章
+                      1 Post
                     
                   </div>
                 </div>
@@ -539,7 +550,7 @@
     </div>
     <div class="theme-archive__items mdui-container-fluid">
       <div class="theme-archive__items__title mdui-text-color-theme-secondary">
-        标签
+        Tags
       </div>
       <div class="mdui-row">
         
@@ -547,13 +558,13 @@
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/tags/tag1/" target="_self" class="theme-link--no-style">
               <div class="mdui-card mdui-color-deep-orange">
-                <div class="mdui-card-media" style="background-image: url(/images/random/10.png)"></div>
+                <div class="mdui-card-media" style="background-image: url(/images/random/21.png)"></div>
                 <div class="theme-archive__items__content">
                   <img class="mdui-img-circle theme-archive__items__avatar" src="/images/favicon.icon" />
                   <div class="theme-archive__items__text-title">tag1</div>
                   <div class="theme-archive__items__length">
                     
-                      2 篇文章
+                      2 Posts
                     
                   </div>
                 </div>
@@ -564,14 +575,14 @@
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/tags/tag2/" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-light-green">
-                <div class="mdui-card-media" style="background-image: url(/images/random/8.png)"></div>
+              <div class="mdui-card mdui-color-purple">
+                <div class="mdui-card-media" style="background-image: url(/images/random/1.png)"></div>
                 <div class="theme-archive__items__content">
                   <img class="mdui-img-circle theme-archive__items__avatar" src="/images/favicon.icon" />
                   <div class="theme-archive__items__text-title">tag2</div>
                   <div class="theme-archive__items__length">
                     
-                      2 篇文章
+                      2 Posts
                     
                   </div>
                 </div>
@@ -583,15 +594,15 @@
     </div>
     <div class="theme-archive__items mdui-container-fluid">
       <div class="theme-archive__items__title mdui-text-color-theme-secondary">
-        年份
+        Years
       </div>
       <div class="mdui-row">
         
           
           <div class="mdui-col-xs-6 mdui-col-md-3 theme-archive__items__item">
             <a href="/archives/2018" target="_self" class="theme-link--no-style">
-              <div class="mdui-card mdui-color-light-blue">
-                <div class="mdui-card-media" style="background-image: url(/images/random/7.png)"></div>
+              <div class="mdui-card mdui-color-orange">
+                <div class="mdui-card-media" style="background-image: url(/images/random/26.png)"></div>
                 <div class="theme-archive__items__content theme-archive__items__content--no-length">
                   <img class="mdui-img-circle theme-archive__items__avatar" src="/images/favicon.icon" />
                   <div class="theme-archive__items__text-title">2018</div>
@@ -606,7 +617,7 @@
   
     <div class="mdui-dialog" id="contactDialog">
       <div class="mdui-dialog-title">
-        如何联系我
+        How to contact me
       </div>
       <div class="mdui-dialog-content">
         <div class="mdui-list">
@@ -633,7 +644,7 @@
       </div>
       <div class="mdui-dialog-actions">
         <button class="mdui-btn mdui-ripple" mdui-dialog-close>
-          关闭
+          Close
         </button>
       </div>
     </div>
@@ -693,9 +704,9 @@
   </main>
 
   <div id="outdated" style="z-index: 9999;">
-    <h6>你的浏览器已经过气辣！</h6>
-    <p>赶紧升级浏览器来访问本站吧！<a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">现在就去</a></p>
-    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="关闭">&times;</a></p>
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
   </div>
   <!-- import js -->
 
