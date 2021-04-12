@@ -1,15 +1,16 @@
 {
-    "signIds":
+    "running":false,
+    "signKeys":
     [{
-        "id":"cheng",
+        "key":"9527",
         "time":30
     },
     {
-        "id":"cheng2",
+        "key":"fuck",
         "time":60
     },
     {
-        "id":"cheng3",
+        "key":"",
         "time":90
     }]
     
