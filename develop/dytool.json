@@ -1,5 +1,5 @@
 {
-    "running":false,
+    "running":true,
     "signKeys":
     [{
         "key":"9527",
@@ -10,7 +10,7 @@
         "time":60
     },
     {
-        "key":"",
+        "key":"cheng",
         "time":90
     }]
     
